@@ -1,0 +1,32 @@
+.toggler-button {
+  background-color: #1e1e30;
+  color: #64748b;
+}
+.spread-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #cbd5e1;
+}
+.btn {
+  cursor: pointer;
+  width: 140px;
+  height: 60px;
+  left: 294px;
+  top: 1623px;
+  background-color: #1e1e30;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #64748b;
+}
+
+.get-bar-graphs:hover {
+  font-weight: 700;
+  color: #ffffff;
+}

@@ -1,0 +1,36 @@
+.red-confirmed-chart {
+  background: #331427;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.blue-active-chart {
+  background: #132240;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.green-recovered-chart {
+  background: #182829;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.grey-deceased-chart {
+  background: #1c1c2b;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.voilet-tested-chart {
+  background: #230f41;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.pink-tested-ratio-chart {
+  background: #2e1e30;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.light-pink-vaccinated-chart {
+  background: #332323;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
