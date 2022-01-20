@@ -3,7 +3,6 @@ import './App.css'
 import Home from './components/Home'
 import About from './components/About'
 import State from './components/State'
-import Tabs from './components/Tabs'
 import NotFound from './components/NotFound'
 
 const statesList = [
@@ -162,7 +161,6 @@ const App = () => (
         component={() => <Home statesList={statesList} key={statesList} />}
       />
       <Route exact path="/about" component={About} />
-      <Route exact path="/tabs" component={Tabs} />
       <Route
         exact
         path="/search/:id"

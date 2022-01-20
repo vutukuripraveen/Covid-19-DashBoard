@@ -133,7 +133,18 @@
 }
 .state-ui {
   width: 150px;
+  padding: 0px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.Home-loader-container {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }

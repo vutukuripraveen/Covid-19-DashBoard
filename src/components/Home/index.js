@@ -51,12 +51,22 @@ class Home extends Component {
 
   sortAscending = () => {
     const {statesInfo} = this.state
-    this.setState({statesInfo: statesInfo.sort()})
+    const sortedList = statesInfo.sort((a, b) => {
+      const x = a.stateName.toUpperCase()
+      const y = b.stateName.toUpperCase()
+      return x > y ? 1 : -1
+    })
+    this.setState({statesInfo: sortedList})
   }
 
   reverseSort = () => {
     const {statesInfo} = this.state
-    this.setState({statesInfo: statesInfo.reverse()})
+    const sortedList = statesInfo.sort((a, b) => {
+      const x = a.stateName.toUpperCase()
+      const y = b.stateName.toUpperCase()
+      return x < y ? 1 : -1
+    })
+    this.setState({statesInfo: sortedList})
   }
 
   getSearchResults = () => {
@@ -67,6 +77,12 @@ class Home extends Component {
     )
     return searchResults
   }
+
+  renderLoadingView = () => (
+    <div className="Home-loader-container" testid="homeRouteLoader">
+      <Loader type="Oval" color="#007BFF" height="50" width="50" />
+    </div>
+  )
 
   render() {
     const {statesInfo, isLoading, searchInput} = this.state
@@ -122,11 +138,7 @@ class Home extends Component {
           </div>
         </div>
 
-        {isLoading ? (
-          <Loader type="TailSpin" color="#00BFFF" height={50} width={50} />
-        ) : (
-          <India />
-        )}
+        {isLoading ? this.renderLoadingView() : <India />}
 
         <div className="statewise-info">
           <div className="statewise-heading">
@@ -136,7 +148,7 @@ class Home extends Component {
                 src="https://res.cloudinary.com/dbweo4cmc/image/upload/v1625829600/sort_ffbmsj.png"
                 className="sort"
                 alt="asc"
-                onClick={this.reverseSort}
+                onClick={this.sortAscending}
               />
               <img
                 src="https://res.cloudinary.com/dbweo4cmc/image/upload/v1625829714/sort1_ujsiru.png"

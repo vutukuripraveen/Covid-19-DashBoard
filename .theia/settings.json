@@ -1,4 +1,16 @@
 {
   "cSpell.words": ["list", "states"],
-  "cSpell.ignoreWords": ["list", "object", "path", "states"]
+  "cSpell.ignoreWords": [
+    "about",
+    "covid",
+    "data",
+    "factoids",
+    "get",
+    "linkify",
+    "list",
+    "object",
+    "path",
+    "states",
+    "statewise"
+]
 }
